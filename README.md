@@ -132,8 +132,8 @@ Thanks goes to these **Wonderful People** 👨🏻‍💻:      🚀 **Contribut
 <table>
 	<tr>
 		<td>
-			<a href="https://github.com/Priyadarshan2000/Hacktoberfest_Development/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Priyadarshan2000/Hacktoberfest_Development" />
+		<a href="https://github.com/Priyadarshan2000/Showcase-Your-Web-development/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Priyadarshan2000/Showcase-Your-Web-development" />
 </a>
 		</td>
 	</tr>
