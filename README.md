@@ -83,7 +83,7 @@ This year, the first 55,000 participants can earn a T-shirt.
 
 
 ``$ cd <cloned-folder>`` 
-``$ git remote add upstream https://github.com/Priyadarshan2000/Hacktoberfest_Development.git ``
+``$ git remote add upstream https://github.com/Priyadarshan2000/Showcase-Your-Web-development.git ``
 ******
 
 #### 4️⃣ Now synchronize your forked repo:
