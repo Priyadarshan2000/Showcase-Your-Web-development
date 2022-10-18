@@ -89,15 +89,15 @@ const SignUp = styled.a`
 
 const Description = styled.p`
   color: hsla(0, 0%, 95.3%, 1);
-  font-size: 11px;
+  font-size: 12px;
   margin: 0 0 24px;
   line-height: 1.5;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.8px;
 `;
 
 const CTALogoTwo = styled.img`
-  max-width: 600px;
-  margin-bottom: 20px;
+  max-width: 620px;
+  margin-bottom: 24px;
   display: inline-block;
   vertical-align: bottom;
   width: 100%;
