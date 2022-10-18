@@ -1,0 +1,33 @@
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+
+    height: 60%;
+    justify-content: space-between;
+  }
+  
+  .activeContainer {
+    display: flex;
+    align-items: center;
+  
+    margin: 22px;
+  
+  }
+  .navi{
+    background-color: #2979ff;
+    height:60px;
+  }
+  .activeItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .activeContainer img {
+    padding-left: 10px;
+  }
+  
+  .textContainer h1 {
+    margin-bottom: 0px;
+  }
+  
