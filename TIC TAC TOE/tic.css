@@ -3,7 +3,7 @@
 	/* Heading */
 	h1 {
 		color: orangered;
-		font-size: 45px;
+		font-size: 48px;
 	}
 
 	/* 3*3 Grid */
@@ -13,8 +13,8 @@
 		height: 52px;
 		margin: auto;
 		border: 1px solid gray;
-		border-radius: 6px;
-		font-size: 30px;
+		border-radius: 8px;
+		font-size: 32px;
 		text-align: center;
 	}
 
@@ -25,13 +25,13 @@
 		height: 40px;
 		border: 1px solid dodgerblue;
 		margin: auto;
-		border-radius: 4px;
+		border-radius: 8px;
 		font-family: Verdana,
 			Geneva, Tahoma, sans-serif;
 
 		background-color: dodgerblue;
 		color: white;
-		font-size: 20px;
+		font-size: 24px;
 		cursor: pointer;
 	}
 
@@ -41,7 +41,7 @@
 			Geneva, Tahoma, sans-serif;
 
 		color: dodgerblue;
-		font-size: 20px;
+		font-size: 24px;
 	}
 
 	/* Main Container */
@@ -55,5 +55,5 @@
 			Geneva, Tahoma, sans-serif;
 			
 		color: dodgerblue;
-		font-size: 17px;
+		font-size: 18px;
 	}
