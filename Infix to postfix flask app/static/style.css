@@ -1,0 +1,51 @@
+*{
+     padding: 0;
+     margin: 0;
+}
+.collapse navbar-collapse{
+     display: flex;
+     align-items: flex-end;
+}
+.navbar-nav{
+     display: flex;
+     align-items: flex-end;
+}
+.fuck{
+     height:70vh;
+     width:100%;
+     display:flex;
+     border-radius: 12px;
+     background-color: aquamarine;
+     align-content: space-between;
+     
+}
+.div1{
+height:34vh;
+width:45%;
+
+}
+.div2{
+height:34vh;
+width:50%;
+text-align:center;
+background-color: white;
+border-radius: 5.5%;
+padding: 0;
+}
+button {
+background-color: #480426;
+border: 2px;
+border-radius:5px;
+color: white;
+padding: 9px 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+a{
+color:blue;
+}
+a:visited{color:purple;}
+a:hover{color:red;}
+
