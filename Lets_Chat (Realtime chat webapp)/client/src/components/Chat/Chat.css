@@ -1,0 +1,49 @@
+.outerContainer {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecebfd;
+  }
+  ::-webkit-scrollbar{
+    width:0.01px;
+  }
+  .contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 8px;
+    height: 60%;
+    width: 35%;
+  }
+  .Navbar{
+    background-color: aliceblue;
+    height:55px;
+    padding: 0.5rem;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .outerContainer {
+      height: 100%;
+    }
+  
+  }
+  
+  @media (min-width: 480px) and (max-width: 1200px) {
+    .container {
+      width: 60%;
+    }
+  }
+  .dnone2{
+display: none;
+  }
+  @media screen and (max-width:771px) {
+    .dnone{
+      display: none;
+    }
+    .dnone2{
+      display:block;
+      padding:0;
+    }
+  }

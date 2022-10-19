@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Be+Vietnam+Pro:wght@200&family=Lobster&family=Source+Code+Pro:ital@1&display=swap');
+
+.main_bg{
+ 
+height: 101vh;
+display: flex;
+justify-content: center;
+align-items: center;
+/* padding: 8rem; */
+}
+
+/* .joinInput{
+    width: 30px;
+} */
+
+/* 
+ */
+ .cardd{
+   margin-left: 9rem;
+
+ }
+ .body{
+  background-color: #a0c2e538;
+ }
+
+@media screen and (max-width:770px) {
+  .cardd{
+    background-color: transparent;
+    padding-top: 1rem;
+    max-width: 22rem;
+    margin: auto auto;
+    
+  }
+ 
+}
