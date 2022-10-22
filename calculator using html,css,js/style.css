@@ -1,6 +1,6 @@
 body,
 html {
-    padding: 0;
+    padding: 1px;
     margin: 0;
     display: flex;
     justify-content: center;
