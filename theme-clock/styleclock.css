@@ -25,7 +25,7 @@ html.dark {
 
 body {
   font-family: 'Heebo', sans-serif;
-  display: flex;
+  display: cover;
   align-items: center;
   justify-content: center;
   height: 100vh;
