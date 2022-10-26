@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 .hero{
-	height: 100vh;
+	height: 95vh;
 	width: 100%;
 	background-image: url(background2.jpg);
 	background-size: cover;
