@@ -31,7 +31,7 @@ h1::before{
     content: '';
     position: absolute;
     width: 100px;
-    height: 5px;
+    height: 6px;
     background-color: rgb(146, 146, 146);
     bottom: -1px;
     left: 50%;
@@ -41,7 +41,7 @@ h1::before{
 }
 @keyframes animate{
     0%{
-        width: 70px;
+        width: 75px;
     }
     50%{
         width: 140px;
