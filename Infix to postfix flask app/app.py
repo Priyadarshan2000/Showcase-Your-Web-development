@@ -35,7 +35,7 @@ def get_data():
         s=request.form['Infix']
         postfix=infix_to_postfix(s)
         return render_template("output.html",postfix=postfix)
-    return "Invalid"
+    return "not possible"
 
 if __name__=="__main__":
     app.run(debug=True)
