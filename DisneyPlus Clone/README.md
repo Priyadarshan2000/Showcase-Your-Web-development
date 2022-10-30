@@ -1,5 +1,5 @@
 # DisneyPlus Clone
-
+it's a clone app
 ### Home Page
 ![image](https://user-images.githubusercontent.com/62868878/115612683-28d4cd00-a309-11eb-9aba-7557f1ec7f0f.png)
 
