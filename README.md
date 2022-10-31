@@ -1,15 +1,16 @@
 #hacktoberfest 2022
 #open source contribution
 #biggestfestival
+#biggestopensourcefestival
   ![image](https://user-images.githubusercontent.com/62868878/193399597-df087ffd-c518-4afe-a6a0-1b768fbeda97.png)
 
   
-# Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> HACKTOBERFEST 2022 IS HERE :bangbang::bangbang::bangbang:
+# Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="35px"> HACKTOBERFEST 2022 IS HERE :bangbang::bangbang::bangbang:
 
 :performing_arts: **What is Hacktoberfest ?**
 
 :diamonds: Hacktoberfest is a month-long challenge. It happens every year in the month of October.
-  Hacktoberfest is open to everyone and it marks the celebration of **Open Source.** It's the biggest Open Source event that encourages newbies to participate in Open Source and     create their 1st meaningful PR.
+  Hacktoberfest is open to everyone and it marks the celebration of **Open Source.** It's the biggest Open Source event that encourages newbies to participate in Open Source and create their 1st meaningful PR.
   
   <h1 align="center"><img src='https://github.com/Priyadarshan2000/Awesome-Python-Scripts/blob/main/picture/octocat-wave-dribbble.gif'></h1>
 

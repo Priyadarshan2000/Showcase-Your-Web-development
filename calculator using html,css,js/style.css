@@ -1,6 +1,6 @@
 body,
 html {
-    padding: 1px;
+    padding: 2px;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -31,8 +31,8 @@ input {
     outline: none;
     text-align: right;
     border: none;
-    font-size: 3.5rem;
-    width: 78vw;
+    font-size: 4.5rem;
+    width: 80vw;
     margin-bottom: 0.6rem;
     border-radius: 0.6rem;
     padding: 0.6rem 1.5rem;

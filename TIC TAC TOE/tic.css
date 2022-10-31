@@ -9,7 +9,7 @@
 	/* 3*3 Grid */
 	#b1, #b2, #b3, #b4, #b5,
 	#b6, #b7, #b8, #b9 {
-		width: 85px;
+		width: 80px;
 		height: 40px;
 		margin: auto;
 		border: 1px solid gray;
