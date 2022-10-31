@@ -3,7 +3,7 @@ html {
 }
 
 * {
-  box-sizing: border-oval;
+  box-sizing: border-box;
 }
 
 body {
