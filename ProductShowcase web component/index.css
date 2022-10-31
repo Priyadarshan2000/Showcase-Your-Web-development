@@ -1,0 +1,948 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #FBFCFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+
+    background-color: #2B2835;
+}
+
+.navigation {
+    position: absolute;
+    top: 14px;
+    left: 27px;
+    right: 27px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beatsLogo {
+    width: 27px;
+    height: 27px;
+}
+
+/* Hamburger animations start */
+
+.navigation input {
+    opacity: 0;
+
+    position: absolute;
+    top: 2px;
+    left: calc(100% - 25px);
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hamburger__menu {
+    position: absolute;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    right: -27px;
+    margin: 0 0 -240px;
+    
+    background-color: rgba(25, 23, 32, 0.5);
+    list-style-type: none;
+    
+    transform-origin: 0% 0%;
+    transform: translate(150%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    color: #FFF;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1.9px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.hamburger__item {
+    margin: 15px;
+    text-transform: uppercase;
+}
+
+.hamburger__item img {
+    width: 20px;
+    height: 20px;
+}
+
+.hamburger__item:first-child {
+    margin-top: 17px;
+}
+
+.hamburger__item:last-child {
+    margin-top: 60px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        height: 616px;
+    } 
+
+    .hamburger__logo {
+        display: none;
+    }
+
+    .navigation {
+        right: 0;
+        left: 0;
+        top: 0;
+
+        flex-direction: row;
+        background-color: rgba(25, 23, 32, 0.5);
+
+        padding: 5px 95px;
+    }
+
+    .navigation input {
+        display: none;
+    }
+
+    .hamburger__menu {
+        transition: none;
+        transform: none;
+        position: relative;
+        flex-direction: row;
+        gap: 3%;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        margin-left: 25px;
+        height: 78px;
+        width: 100%;
+
+        background-color: transparent;
+    }
+
+    .hamburger__item {
+        margin: 0;
+    }
+
+    .hamburger__item:last-child {
+        margin: 0;
+    }
+
+    .hamburger__item:first-child {
+        margin: 0;
+    }
+
+    .hamburger__item img {
+        width: 27px;
+        height: 27px;
+        margin-right: 46px;
+    }
+
+    .beatsLogo {
+        width: 50px;
+        height: 50px;
+        margin-right: 80px;
+    }
+}
+
+.hamburger__logo span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #FBFCFF;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+.navigation input:checked ~ .hamburger__logo span {
+    opacity: 1;
+    transform: rotate(-45deg) translate(-1px, -1px);
+    background: #FBFCFF;
+}
+
+.navigation input:checked ~ .hamburger__logo span:nth-last-child(2)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.navigation input:checked ~ .hamburger__logo span:nth-last-child(3)
+{
+  transform: rotate(45deg) translate(2px, -1px);
+}
+
+.navigation input:checked ~ .hamburger__menu {
+    transform: none;
+}
+
+/* Hamburger animations end */
+
+/* Navigation end */
+
+/* Big Earphones section start */
+
+.bigEarphones__image {
+    width: 375px;
+}
+
+.bigEarphones__description-container {
+    padding-left: 17px;;
+}
+
+.bigEarphones__subheader {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.bigEarphones__header {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.bigEarphones__payment {
+    display: flex;
+}
+
+.bigEarphones__payment-price {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 39px;
+
+    margin: 0;
+}
+
+.bigEarphones__payment-button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    border: none;
+    background: #FFC700;
+    border-radius: 100px;
+    padding: 9px 35px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.bigEarphones__info {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+
+    opacity: 0.68;
+}
+
+@media (min-width: 1024px) {
+    .bigEarphones {
+        display: flex;
+    }
+
+    .bigEarphones__image {
+        width: 900px;
+    }
+
+    .bigEarhones__container {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .bigEarphones__description-container {
+        margin-top: 15%;
+        margin-left: -35%;
+        width: auto;
+        color: white;
+    }
+
+    .bigEarphones__payment-price {
+        margin-right: 40px;
+    }
+
+    .bigEarphones__info {
+        color: #FFC700;
+        opacity: 1;
+    }
+}
+
+/* Big Earphones section end */
+/* Beats Pill section start */
+.beatsPill {
+    margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beatsPill__image {
+    width: 350px;
+    height: 350px;
+}
+
+.beatsPill__image-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+
+}
+
+.beatsPill__description-container {
+    padding-left: 17px;
+    margin-top: -80px;
+}
+
+.beatsPill__subheader {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    margin-bottom: 3px;
+}
+
+.beatsPill__header-container {
+    display: flex;
+}
+
+.plusSign {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 55px;
+    color: #2B2835;
+    margin-top: -11px;
+}
+
+.beatsPill__header {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 55px;
+    color: #2B2835;
+
+    margin: 0;
+}
+
+.beatsPill__colors-header {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 55px;
+    color: #2B2835;
+
+    margin: 0;
+}
+
+.beatsPill__colors-subheader {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #2B2835;
+}
+
+.dots {
+    display: none;
+}
+
+.beatsPill__colors-container {
+    display: flex;
+}
+
+.beatsPill__colors-container input[type='radio'] {
+    display: none;
+}
+
+.beatsPill__colors-container label:nth-of-type(1):before {
+    content: " ";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.135817);
+    background-color: white;
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+.beatsPill__colors-container label:nth-of-type(2):before {
+    content: " ";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.135817);
+    background-color: #DD5656;
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+.beatsPill__colors-container label:nth-of-type(3):before {
+    content: " ";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.135817);
+    background-color: black;
+    margin-left: 14px;
+    cursor: pointer;
+}
+  
+.beatsPill__colors-container input[type=radio]:checked + label:before {
+    border: 1px solid black;
+}
+
+.beatsPill__payment {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+
+    padding-top: 24px;
+}
+
+.beatsPill__payment-price {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 39px;
+    
+    margin: 0;
+}
+.beatsPill__payment-button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    border: none;
+    background: #FFC700;
+    border-radius: 100px;
+    padding: 9px 35px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.beatsPill__info {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    
+    opacity: 0.68;
+}
+
+@media (min-width: 1024px) {
+    .beatsPill {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 200px;
+    }
+
+    .beatsPill__image-container {
+        margin-top: -56px;
+        
+        width: auto;
+    }
+
+    .beatsPill__image {
+        width: 700px;
+        height: 700px;
+    }
+
+    .beatsPill__description-container {
+        width: auto;
+    }
+
+    .dots {
+        display: flex;
+        position: absolute;
+        top: 500px;
+    }
+    
+    .dots input[type='radio'] {
+        display: none;
+    }
+    
+    .dots label:before {
+        content: " ";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 30px;
+        background-color: #D1D1D1;
+        margin-left: 14px;
+        cursor: pointer;
+    }
+      
+    .dots input[type=radio]:checked + label:before {
+        background-color:black;
+    }
+}
+/* Beats Pill section end */
+/* Power Beats section start */
+
+.powerBeats {
+    background-color: #FFC700;
+    padding-left: 17px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.powerBeats__bg {
+    width: 300%;
+    position: absolute;
+    right: -616px;
+    top: 150px;
+    height: 50%;
+}
+
+.powerBeats__image {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.powerBeats__subheader {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #2B2835;
+    margin: 0;
+}
+
+.powerBeats__header {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 55px;
+    text-transform: uppercase;
+    
+    color: #2B2835;
+}
+
+.powerBeats__description {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+
+    color: #030303;
+}
+
+.powerBeats__description p {
+    margin: 0;
+}
+
+.powerBeats__payment {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+
+    padding-top: 24px;
+}
+
+.powerBeats__payment-price {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 39px;
+    
+    margin: 0;
+}
+.powerBeats__payment-button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 100px;
+    padding: 9px 35px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.powerBeats__info {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    
+    opacity: 0.68;
+}
+
+@media (min-width: 1024px) {
+    .powerBeats {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .powerBeats__bg {
+        width: 105%;
+        right: 0;
+        top: 0;
+        height: auto;
+    }
+
+    .powerBeats__image {
+        width: auto;
+    }
+}
+
+/* Power Beats section end */
+/* Earpods Section start */
+
+.earpodes {
+    display: flex;
+    flex-direction: column;
+
+    background: #F4F4F4;
+    padding: 40px 0 55px 0;
+}
+
+.earpodes__description-container {
+    padding-left: 17px;
+}
+
+.earpodes__description {
+    padding: 50px 0 40px 0;
+}
+
+.earpodes__description p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #030303;
+}
+
+@media (min-width: 1024px) {
+    .earpodes {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .earpodes__description-container {
+        padding-left: 93px;
+    }
+}
+
+/* Earpods Section end */
+
+/* Collection Section start */
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item {
+    background-color: #f8f8f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+
+.item__image {
+    padding-bottom: 75%;
+}
+
+.item__image-2 {
+    margin-top: -60px;
+    padding-bottom: calc(50% + 60px);
+}
+
+.item__image-3 {
+    margin-top: 20px;
+}
+
+.item__image-4 {
+    padding-bottom: 20%;
+    margin-top: 45px;
+}
+
+.item__image-5 {
+    padding-bottom: 65%;
+    margin-top: -5%;
+}
+
+.item__image-6 {
+    margin-left: 20%;
+    margin-top: 10%;
+    padding-bottom: 13%;
+}
+
+.item_header {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 55px;
+    /* identical to box height, or 137% */
+
+
+    color: #2B2835;
+
+    margin: 0;
+}
+
+.item__container {
+    padding: 25px;
+}
+
+.item__description {
+    padding: 25px;
+    position: absolute;
+    bottom: 0;
+}
+
+.item__description p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #030303;
+}
+
+.item__description .powerBeats__payment h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #9D8220;
+}
+
+.item__description .powerBeats__payment {
+    align-items: center;
+}
+
+.item__description .powerBeats__payment-button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 1024px) {
+    .collection {
+        padding: 35px;
+        gap: 35px;
+    }
+
+    .row {
+        flex-direction: row;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .item {
+        width: 400px;
+    }
+    
+    .collection:nth-child(1) .item .item__description {
+        bottom: 0;
+    }
+
+    .item__image-2 {
+        padding-bottom: 50%;
+    }
+
+    .item__image-2 {
+        padding-bottom: 50%;
+    }
+}
+
+/* Collection Section end */
+
+/* Feedback section start */
+
+.feedback {
+    margin: 0 17px 50px;
+    background-color: #f8f8f9;
+
+    display: flex;
+    justify-content: center;
+}
+
+.feedback__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 22px 64px;
+}
+
+.feedback__header {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 55px;
+    text-align: center;
+
+    color: #2B2835;
+
+    margin: 0;
+}
+
+.feedback__subheader {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #030303;
+}
+
+.feedback__form {
+    width: 100%;
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__input {
+    margin-bottom: 20px;
+
+    border: 1px solid #BFBFBF;
+    box-sizing: border-box;
+    border-radius: 18px;
+
+    padding: 10px 0 10px 12px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #030303;
+    
+    opacity: 0.31;
+}
+
+.feedback__button {
+    background: #FFC700;
+    border-radius: 100px;
+    border: none;
+
+    padding: 12px 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    
+    color: #000000;
+}
+
+@media (min-width: 1024px) {
+    .feedback__container {
+        width: 40%;
+    }
+
+    .feedback { 
+        max-width: 1300px;
+        max-height: 335px;
+        margin: 0 auto 65px;
+
+    }
+}
+
+/* Feedback section end */
+
+/* Footer start */
+
+.footer {
+    background-color: #2B2835;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.logoContainer .beatsLogo {
+    width: 50px;
+    height: 50px;
+}
+
+.products {
+    padding: 0 0 8px 16px;
+}
+
+.col__header {
+    cursor: pointer;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 31px;
+    /* or 172% */
+
+
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.col__item {
+    cursor: pointer;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    /* or 183% */
+    text-transform: uppercase;
+    color: #B8B8B8;
+    margin: 0;
+}
+
+.followUs {
+    padding: 15px 0 35px;
+}
+
+@media (min-width: 1024px) {
+    .footer__container {
+        display: flex;
+        padding: 55px 0 100px;
+        justify-content: space-evenly;
+    }
+
+    .logoContainer {
+        padding: 0;
+    }
+}
+
+/* Footer end */
